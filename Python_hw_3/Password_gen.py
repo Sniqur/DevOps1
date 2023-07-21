@@ -8,8 +8,8 @@ def main():
     while atributes != 6:
         os.system('cls')
         print("""
-Hello, this is a Linux Password Generator!
-You can choose which options you want to add in your password
+Hello, it is a  Password Generator!
+You can choose which options you want to exclude from your password
 By the defaults, your password contains 8 characters with at least 
 one uppercase and one lowercase letters one digit and one special character     
 """)
@@ -35,7 +35,7 @@ one uppercase and one lowercase letters one digit and one special character
             print(passwd.length_input())
             input("Enter to continue ")
         elif atributes == "6":
-            print(passwd.password_generate())
+            print(passwd.generate_password())
             exit(0)
         else:
             print("Options does`nt exist")

@@ -3,14 +3,14 @@ import random
 
 
 class PasswordGenerator:
-
+#Initializes the attributes of the class.
     def __init__(self):
         self.length = 8
         self.include_uppercase = True
         self.include_lowercase = True
         self.include_digits = True
         self.include_special_chars = True
-
+#Default attributes included in password
     def rand_characters(self):
         random_ls = []
         if self.include_digits == True:
@@ -26,8 +26,8 @@ class PasswordGenerator:
         except:
             print("Something went wrong")
             exit(0)
-
-    def password_generate(self):
+#Generates and returns a random password based on the specified criteria.
+    def generate_password(self):
         password = " "
         for i in range(self.length):
             password = password + self.rand_characters()
