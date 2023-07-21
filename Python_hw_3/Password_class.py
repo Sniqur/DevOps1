@@ -3,7 +3,7 @@ import random
 
 
 class PasswordGenerator:
-#Initializes the attributes of the class.
+#Initializes the attributes of the class
     def __init__(self):
         self.length = 8
         self.include_uppercase = True
